@@ -15,21 +15,42 @@
     <header>Testing FlexBox</header>
     <div class="container">
         <div class="box top-right">
-          <h1>The Content in this Box is Vanilla CSS hunty</h1>
-          <img src="./Emoticon.png"/>
-          <p>Same html set up</p>
+            <h1>Vanilla CSS hunty</h1>
+            <img src="./Emoticon.png" />
+            <p>Same html set up</p>
         </div>
         <div class="box top-left">
-          <h1>The Content in this Box is set 'display: flex;'</h1>
-          <img src="./Emoticon.png"/>
-          <p>Same html set up</p>
+            <h1>display: flex;</h1>
+            <img src="./Emoticon.png" />
+            <p>won't wrap</p>
+            <!-- <p>Same html set up</p> -->
         </div>
         <div class="box bottom-right">
+            <h1>display: flex; flex-wrap: wrap;</h1>
+            <img src="./Emoticon.png" />
+            <!-- <p>Same html set up</p> -->
+            <p>wraps when there isn't enough space for ea element</p>
         </div>
         <div class="box bottom-left">
+            <h1>display: flex; flex-direction: column;</h1>
+            <img src="./Emoticon.png" />
+            <p>Same html set up</p>
+            <!-- <p>won't wrap</p> -->
         </div>
     </div>
 
+<!-- <footer>
+        <h2>Notes:</h2>
+        <ul>
+            <li>- flex-wrap: wrap-reverse is pointless, right? </li>
+            <li>- default settings for 'display: flex;'</li>
+            <ul>
+                <li>flex-wrap: nowrap;</li>
+                <li>flex-direction: row;</li>
+            </ul>
+            <li>- flex-direction: row-reverse; and column-reverse; are also things to test</li>
+        </ul>
+    </footer> -->
 
 
 </body>
